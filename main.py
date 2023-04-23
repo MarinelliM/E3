@@ -6,11 +6,6 @@ def test():
     m = Registro(8, 7.1, 9.9)
     m.getvalores()
 
-def mostrarmatriz(lis):
-    for i in range(3):
-        for j in range(2):
-            print(lis[i][j])
-
 if __name__ == '__main__':
     test()
     lista = []
@@ -30,5 +25,4 @@ if __name__ == '__main__':
             presion=float(fila[4])
             registro=Registro(temperatura,humedad,presion)
             lista[dia][hora] = registro
-            print(lista)
     menu(lista)
